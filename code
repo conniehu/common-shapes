@@ -1,0 +1,42 @@
+import turtle
+
+def draw_shapes():
+    window = turtle.Screen()
+    window.bgcolor("red")
+
+    #draws a square
+    brad = turtle.Turtle()
+    brad.shape("circle")
+    brad.color("white")
+    brad.speed(1)
+
+    count = 0
+    while count < 4:
+        brad.forward(100)
+        brad.right(90)
+        count += 1
+
+    #draws a circle
+    angie = turtle.Turtle()
+    angie.shape("arrow")
+    angie.color("blue")
+    angie.circle(100)
+    
+    #draws a triangle
+    chloe = turtle.Turtle()
+    chloe.shape("arrow")
+    chloe.color("green")
+
+    count = 0
+    heading = 120
+    while count < 3:
+        chloe.forward(100)
+        chloe.setheading(heading)
+        heading += 120
+        count +=1
+
+    window.exitonclick()
+
+
+draw_shapes()
+
